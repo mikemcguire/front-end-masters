@@ -1,8 +1,8 @@
-import Router from './router'
-import styles from './styles/main.styl'
-import icons from './octicons/octicons/octicons.css'
-import app from 'ampersand-app'
-import Me from './models/me'
+import Router from "./router"
+import styles from "./styles/main.styl"
+import icons from "octicons/octicons/octicons.css"
+import app from "ampersand-app"
+import Me from "./models/me"
 
 window.app = app
 

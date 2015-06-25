@@ -19,7 +19,7 @@ export default Router.extend({
 		if(opts.layout){
 			page = ( 
 				<Events classNam="container">
-					<Layout>
+					<Layout me={app.me}>
 						{page}
 					</Layout>
 				</Events>
@@ -31,7 +31,7 @@ export default Router.extend({
 		this.renderPage(<PublicPage/>, {layout:false})
 	},
 	repos () {
-		this.renderPage(<ReposPage/>)
+		this.renderPage(<ReposPage repos={app.me.repos} />)
 	},
 	authCallback (query){
 		query = qs.parse(query)

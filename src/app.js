@@ -1,5 +1,6 @@
 import Router from "./router"
-import styles from "./styles/styles.css"
+import styles from "./styles/styles.styl"
+
 window.app = {
 	init() {
 		this.router = new Router()
